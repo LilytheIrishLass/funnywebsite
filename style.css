@@ -1,0 +1,83 @@
+* {
+    cursor: none;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(255, 216, 252);
+}
+
+
+#customCursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.buttonsBox {
+    display: flex;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#testElement {
+    /* transform: translate(-50%, -50%); */
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    padding: 20px;
+    background-color: #000000;
+    border: 2px solid #aa0d0d;
+    border-radius: 5px;
+    color: white;
+}
+
+#mainTitle {
+    display: flex;
+    margin-top: 20%;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#testElement2 {
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+    padding: 20px;
+    background-color: #b31eee;
+    border: 2px solid #ff20f4;
+    border-radius: 5px;
+    color: white;
+    animation: 1s infinite ease-in-out wiggle;
+    z-index: 1;
+    transition: 0.5s;
+    box-shadow: 0 8px 12px -2px rgb(168, 168, 168);
+}
+
+#testElement2:hover {
+    background-color: #9600ec;
+    animation-play-state: paused;
+    transform: scale(1.2);
+    border-color: greenyellow;
+}
+
+@keyframes wiggle {
+    0% {
+        background-color: #b31eee;
+    }
+
+    50% {
+        background-color: #d771ff;
+    }
+
+    100% {
+        background-color: #b31eee;
+    }
+}
